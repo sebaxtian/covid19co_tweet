@@ -1,0 +1,7 @@
+# covid19co_tweet requirements
+pandas
+numpy
+unidecode
+jupyterlab
+kaggle
+tweepy
