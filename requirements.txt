@@ -5,3 +5,6 @@ unidecode
 jupyterlab
 kaggle
 tweepy
+pylint
+autopep8
+python-dotenv

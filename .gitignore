@@ -144,3 +144,6 @@ output/*
 # Input
 input/*
 !input/README.md
+
+# Environment Variables
+.env
