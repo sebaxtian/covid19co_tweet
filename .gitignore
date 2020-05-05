@@ -145,5 +145,9 @@ output/*
 input/*
 !input/README.md
 
+# Kaggle
+kaggle/*
+!kaggle/README.md
+
 # Environment Variables
 .env
