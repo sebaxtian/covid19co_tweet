@@ -9,14 +9,15 @@
 if [ -f .env ]; then
     # Load Environment Variables
     export $(cat .env | grep -v '#' | awk '/=/ {print $1}')
+    echo 'Load Environment Variables'
     # For instance
     #echo $KAGGLE_KEY
 fi
 
 # Download Kaggle Dataset
 if [ $KAGGLE_KEY ] && [ $KAGGLE_USERNAME ]; then
-    #echo ''
     kaggle datasets download -d sebaxtian/covid19co -p ./kaggle --unzip
+    echo 'Download Kaggle Dataset'
 fi
 
 # Run Colombia Covid19 Resume
