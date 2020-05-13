@@ -39,6 +39,8 @@ jobs:
         TWEET_CONSUMER_SECRET: ${{ secrets.TWEET_CONSUMER_SECRET }}
         TWEET_ACCESS_TOKEN: ${{ secrets.TWEET_ACCESS_TOKEN }}
         TWEET_ACCESS_TOKEN_SECRET: ${{ secrets.TWEET_ACCESS_TOKEN_SECRET }}
+        KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+        KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
       run: |
         # Run Covid19CO Tweet Script
         ./run.sh
