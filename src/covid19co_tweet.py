@@ -25,9 +25,10 @@ print(data_resume)
 if data_resume[2] > 0 and data_resume[4] > 0 and data_resume[6] > 0 and data_resume[7] > 0:
     # Resume Avalaible
     print('Resume avalaible')
-    tz_co = pytz.timezone('America/Bogota')
-    local_dt = datetime.datetime.utcnow() - datetime.timedelta(hours=5)
-    LOCAL_DATETIME = local_dt.astimezone(tz_co).strftime('%Y-%m-%dT%H:%M:%S')
+    #tz_co = pytz.timezone('America/Bogota')
+    #local_dt = datetime.datetime.utcnow() - datetime.timedelta(hours=5)
+    #LOCAL_DATETIME = local_dt.astimezone(tz_co).strftime('%Y-%m-%dT%H:%M:%S')
+    LOCAL_DATETIME = datetime.datetime.utcnow().astimezone(pytz.timezone('America/Bogota')).isoformat()
 
     # Text Tweet
     text_tweet = """.:-_-:.
